@@ -3,11 +3,11 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className='w-full bg-[#173647] flex flex-col items-center justify-center p-6 relative'>
-      <div className='flex justify-between w-full md:w-auto pb-10'>
+      <div className='flex justify-between w-full md:w-auto pb-10 mb-16'>
         <div className=' md:hidden absolute top-0 left-0 mt-12 ml-12'>
-          <Image src="/Group 1000008081.svg" width={120} height={30} />
+          <Image src="/Group 1000008081.svg" width={180} height={30} />
         </div>
-        <div className="font-DM Sans md:rounded-full border-white text-white border flex items-center gap-4 p-3 top-0 right-0 mt-12 absolute mr-8 rounded-xl">
+        <div className="font-DM Sans md:rounded-full border-white text-white border flex items-center gap-4 p-3 top-0 right-0 mt-12 absolute mr-8 rounded-2xl">
           <h1 className='hidden md:block'>SOUND ON</h1>
           <Image src="/Group 1000008110.svg" width={30} height={30} />
         </div>
@@ -18,7 +18,7 @@ export default function Home() {
           Start Your Life Reset
         </h1>
 
-        <p className='text-white text-center font-DM Sans md:h-10 md:w-auto mt-7 mb-8 w-full md:text-sm'>
+        <p className='text-white text-center font-DM Sans md:h-10 md:w-auto mt-7 mb-12 md:mb-8 w-full md:text-sm'>
           Our 16-week transformation program stacks the best of proven science,
           somatic training methods,<br/> and behavioral change theory to bring you
           lasting change.
@@ -26,18 +26,18 @@ export default function Home() {
       </div>
 
       <form className='flex flex-col items-center mt-4 border-none via-[#173647] w-full md:w-1/2 bg-gradient-radial from-gray-400 to-[#173647]'>
-        <div className='flex w-full '>
-          <div className="flex items-center w-1/2 border-b border-white py-2">
+        <div className=' md:flex w-full md:space-x-5'>
+          <div className="flex items-center md:w-1/2 border-b border-white mb-6 pb-3 md:py-2 w-full">
             <input className="appearance-none bg-transparent border-none w-full text-white py-1 px-2 leading-tight focus:outline-none text-sm" type="text" placeholder="First Name*" aria-label="Full name" />
           </div>
-          <div className="flex items-center w-1/2 border-b border-white py-2 ml-3">
+          <div className="flex items-center md:w-1/2 border-b border-white mb-6 pb-3 md:py-2 w-full">
             <input className="appearance-none bg-transparent border-none w-full text-gray-300 py-1 px-2 leading-tight focus:outline-none text-sm" type="text" placeholder="Last Name*" aria-label="Full name" />
           </div>
         </div>
         <div className="flex items-center w-full border-b border-white py-2 mt-5">
           <input className="appearance-none bg-transparent border-none w-full text-gray-300 py-1 px-2 leading-tight focus:outline-none text-sm" type="text" placeholder="Email*" aria-label="Email" />
         </div>
-        <div className="flex items-center w-full py-2 mt-5">
+        <div className="flex items-center w-full py-2 mt-5 pb-20">
           <label htmlFor="who do you want to become" className="text-gray-400 text-sm">
             Who do you want to become?
           </label>
